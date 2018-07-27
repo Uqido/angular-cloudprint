@@ -1,0 +1,13 @@
+<button (click)="onGetPrintes()">
+  Get printers
+</button>
+
+<div class="printers">
+  <ul *ngFor="let printer of printers">
+    <li>
+      <button (click)="onPrint(printer)">
+        Print on {{ printer }}!
+      </button>
+    </li>
+  </ul>
+</div>
